@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtItemTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/inter"
+        android:maxLines="1"
+        android:text="Food Name"
+        android:textColor="@color/bright_red"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="34sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="$15.00"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtItemTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/star"
+        android:fontFamily="@font/inter"
+        android:text="@string/_4_0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginStart="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtItemTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/inter"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtDescriptionContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Lorem ipsum dolor sit amet, consectetur"
+        android:textColor="#6C6C6C"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <TextView
+        android:id="@+id/txtMoreOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter"
+        android:text="More Options"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCustomThree"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewGluten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardViewLactose"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMoreOptions"
+        app:layout_constraintVertical_bias="0.066">
+
+        <Button
+            android:id="@+id/btnGluten"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:elevation="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Gluten\nfree"
+            android:textColor="@color/hot_pink"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMoreOptions"
+            app:layout_constraintVertical_bias="0.089" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewLactose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewGluten"
+        app:layout_constraintEnd_toStartOf="@+id/cardViewVegan"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/cardViewGluten"
+        app:layout_constraintTop_toTopOf="@+id/cardViewGluten"
+        app:layout_constraintVertical_bias="0.086">
+
+        <Button
+            android:id="@+id/btnLactose"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:elevation="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Lactose\nfree"
+            android:textColor="@color/hot_pink"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.089" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewVegan"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewLactose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toEndOf="@id/cardViewLactose"
+        app:layout_constraintTop_toTopOf="@+id/cardViewLactose"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btnVegan"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:elevation="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Vegan\nFriendly"
+            android:textColor="@color/hot_pink"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.089" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bright_red"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Add to Cart"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddToCart"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewGluten"
+        app:layout_constraintVertical_bias="0.15">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnIncreaseQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.864"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/add_box" />
+
+            <ImageButton
+                android:id="@+id/btnDecreaseQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnIncreaseQuantity"
+                app:layout_constraintHorizontal_bias="0.228"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/minus_box" />
+
+            <TextView
+                android:id="@+id/txtQuantityCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="27sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnIncreaseQuantity"
+                app:layout_constraintStart_toEndOf="@+id/btnDecreaseQuantity"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="QTY"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewGluten"
+        app:layout_constraintVertical_bias="0.878" />
+
+    <TextView
+        android:id="@+id/txtSubTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="0.0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQuantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toEndOf="@+id/txtQuantity"
+        app:layout_constraintTop_toTopOf="@+id/txtQuantity"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtCustomise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter"
+        android:text="Customise"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionContent" />
+
+    <TextView
+        android:id="@+id/txtCustomOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/inter"
+        android:text="0"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toStartOf="@id/btnIncreaseCustomOne"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCustomise" />
+
+    <TextView
+        android:id="@+id/txtCustomTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter"
+        android:text="0"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCustomOne"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="@+id/txtCustomOne"
+        app:layout_constraintTop_toBottomOf="@+id/txtCustomOne" />
+
+    <TextView
+        android:id="@+id/txtCustomThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/inter"
+        android:text="0"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCustomTwo"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="@+id/txtCustomTwo"
+        app:layout_constraintTop_toBottomOf="@+id/txtCustomTwo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnIncreaseCustomOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomOne"
+        app:layout_constraintStart_toEndOf="@+id/txtCustomOne"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomOne"
+        app:srcCompat="@drawable/add_box" />
+
+    <ImageButton
+        android:id="@+id/btnDecreaseCustomOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomOne"
+        app:layout_constraintEnd_toStartOf="@+id/txtCustomOne"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomOne"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/minus_box" />
+
+    <ImageButton
+        android:id="@+id/btnIncreaseCustomTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomTwo"
+        app:layout_constraintEnd_toEndOf="@+id/btnIncreaseCustomOne"
+        app:layout_constraintStart_toStartOf="@+id/btnIncreaseCustomOne"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomTwo"
+        app:srcCompat="@drawable/add_box" />
+
+    <ImageButton
+        android:id="@+id/btnDecreaseCustomTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomTwo"
+        app:layout_constraintEnd_toEndOf="@+id/btnDecreaseCustomOne"
+        app:layout_constraintStart_toStartOf="@+id/btnDecreaseCustomOne"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomTwo"
+        app:srcCompat="@drawable/minus_box" />
+
+    <ImageButton
+        android:id="@+id/btnIncreaseCustomThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomThree"
+        app:layout_constraintEnd_toEndOf="@+id/btnIncreaseCustomTwo"
+        app:layout_constraintStart_toEndOf="@+id/txtCustomTwo"
+        app:layout_constraintStart_toStartOf="@+id/btnIncreaseCustomTwo"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomThree"
+        app:srcCompat="@drawable/add_box" />
+
+    <ImageButton
+        android:id="@+id/btnDecreaseCustomThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomThree"
+        app:layout_constraintEnd_toEndOf="@+id/btnDecreaseCustomTwo"
+        app:layout_constraintStart_toStartOf="@+id/btnDecreaseCustomTwo"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomThree"
+        app:srcCompat="@drawable/minus_box" />
+
+    <TextView
+        android:id="@+id/txtCustomIngredientOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredient"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/btnIncreaseCustomOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnIncreaseCustomOne"
+        app:layout_constraintTop_toTopOf="@+id/btnIncreaseCustomOne"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtCustomIngredientTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredient"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/btnIncreaseCustomTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnIncreaseCustomTwo"
+        app:layout_constraintTop_toTopOf="@+id/btnIncreaseCustomTwo"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtCustomIngredientThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredient"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/btnIncreaseCustomThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnIncreaseCustomThree"
+        app:layout_constraintTop_toTopOf="@+id/btnIncreaseCustomThree"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtIngredientOnePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="$0.05"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomIngredientOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomIngredientOne"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/dashedLineView"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@drawable/dashed_line"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomIngredientOne"
+        app:layout_constraintEnd_toStartOf="@+id/txtIngredientOnePrice"
+        app:layout_constraintStart_toEndOf="@+id/txtCustomIngredientOne"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomIngredientOne" />
+
+    <TextView
+        android:id="@+id/txtIngredientTwoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.15"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomIngredientTwo"
+        app:layout_constraintEnd_toEndOf="@+id/txtIngredientOnePrice"
+        app:layout_constraintStart_toStartOf="@+id/txtIngredientOnePrice"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomIngredientTwo" />
+
+    <View
+        android:id="@+id/dashedLineView2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@drawable/dashed_line"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomIngredientTwo"
+        app:layout_constraintEnd_toStartOf="@+id/txtIngredientTwoPrice"
+        app:layout_constraintStart_toEndOf="@+id/txtCustomIngredientTwo"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomIngredientTwo" />
+
+    <TextView
+        android:id="@+id/txtIngredientThreePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.10"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomIngredientThree"
+        app:layout_constraintEnd_toEndOf="@+id/txtIngredientTwoPrice"
+        app:layout_constraintStart_toStartOf="@+id/txtIngredientTwoPrice"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomIngredientThree"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/dashedLineView3"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@drawable/dashed_line"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCustomIngredientThree"
+        app:layout_constraintEnd_toStartOf="@+id/txtIngredientThreePrice"
+        app:layout_constraintStart_toEndOf="@+id/txtCustomIngredientThree"
+        app:layout_constraintTop_toTopOf="@+id/txtCustomIngredientThree" />
+
+    <TextView
+        android:id="@+id/txtSubTotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtotal: $"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQuantity"
+        app:layout_constraintEnd_toStartOf="@+id/txtSubTotal"
+        app:layout_constraintTop_toTopOf="@+id/txtQuantity" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtBrand"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Cake'N'Roll"-->
+<!--        android:textSize="25sp"-->
+<!--        android:fontFamily="@font/hobostd"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cardView6" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

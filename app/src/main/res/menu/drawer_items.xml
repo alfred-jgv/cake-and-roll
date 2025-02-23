@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/home"
+        android:id="@+id/navHome"
+        android:title="@string/home" />
+
+    <item
+        android:icon="@drawable/shoppingcart"
+        android:id="@+id/navCart"
+        android:title="@string/my_cart"/>
+
+    <item
+        android:icon="@drawable/heart_check"
+        android:id="@+id/navLiked"
+        android:title="@string/liked"/>
+
+    <item
+        android:icon="@drawable/track"
+        android:id="@+id/navTrackOrder"
+        android:title="@string/track_my_order"/>
+
+    <item
+        android:icon="@drawable/person"
+        android:id="@+id/navProfile"
+        android:title="@string/my_profile"/>
+
+    <item
+        android:icon="@drawable/exit"
+        android:id="@+id/navExit"
+        android:title="@string/exit"/>
+
+</menu>

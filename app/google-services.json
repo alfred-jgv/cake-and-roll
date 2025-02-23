@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "314900476756",
+    "project_id": "cakenrollproject",
+    "storage_bucket": "cakenrollproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314900476756:android:49533ac6a95dbeb365cec1",
+        "android_client_info": {
+          "package_name": "com.example.cakeroll"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBls4nLEWOUOYLqVE2ED9pdfkOtE5UOWBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

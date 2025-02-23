@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeContent">
+
+    <ImageButton
+        android:id="@+id/btnViewHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/view_headline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/imgLogo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toEndOf="@+id/btnViewHeadline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"
+        app:srcCompat="@drawable/motorcycle" />
+
+    <ImageView
+        android:id="@+id/imgLogo2"
+        android:layout_width="97dp"
+        android:layout_height="95dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
+        android:background="@drawable/customtxtfield_one"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="6dp"
+        android:elevation="7dp"
+        android:ems="10"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="7"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:imeOptions="actionSearch"
+        app:layout_constraintBottom_toTopOf="@+id/txtMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo2"
+        app:layout_constraintVertical_bias="0.424" />
+
+
+
+    <ImageButton
+        android:id="@+id/btnDrinks"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toEndOf="@+id/btnSnacks"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenu"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/drinks_selector" />
+
+    <TextView
+        android:id="@+id/txtDrinks"
+        android:layout_width="54dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/inter"
+        android:text="Drinks"
+        android:textAlignment="center"
+        android:textColor="@color/hot_pink"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toEndOf="@+id/txtSnacks"
+        app:layout_constraintTop_toBottomOf="@+id/btnDrinks"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/menu"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <TextView
+        android:id="@+id/txtCake"
+        android:layout_width="49dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="380dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/cakes"
+        android:textAlignment="center"
+        android:textColor="@color/hot_pink"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCake"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <ImageButton
+        android:id="@+id/btnSnacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toEndOf="@+id/btnIceCream"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenu"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/snacks_selector" />
+
+    <ImageButton
+        android:id="@+id/btnCake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenu"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/cakes_selector" />
+
+    <TextView
+        android:id="@+id/txtIceCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="380dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/ice_cream"
+        android:textAlignment="center"
+        android:textColor="@color/hot_pink"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toEndOf="@+id/txtCake"
+        app:layout_constraintTop_toBottomOf="@+id/btnIceCream"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/txtSnacks"
+        android:layout_width="51dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="380dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/snacks"
+        android:textAlignment="center"
+        android:textColor="@color/hot_pink"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toEndOf="@+id/txtIceCream"
+        app:layout_constraintTop_toBottomOf="@+id/btnSnacks"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnIceCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/btnCake"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenu"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/ice_cream_selector" />
+
+    <ScrollView
+        android:id="@+id/homeScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:maxHeight="500dp"
+        android:scrollbars="none"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCake"
+        app:layout_constraintVertical_bias="0.4"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imgRefreshSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/editTextSearch"
+        android:elevation="8dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextSearch"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSearch"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo2"
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        app:srcCompat="@drawable/refresh" />
+</androidx.constraintlayout.widget.ConstraintLayout>
