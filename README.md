@@ -8,7 +8,7 @@ Cake & Roll is an **Android application** built with **Kotlin in Android Studio*
 - ✏️ **Update** product details  
 - ❌ **Delete** products from the inventory  
 - ☁ **Firebase Firestore Database** for cloud storage  
-- 🔐 **Firebase Authentication** (if implemented)  
+- 🔐 **Firebase Authentication**
 
 ## 🛠 Tech Stack  
 - **Language:** Kotlin  
